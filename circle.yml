@@ -1,8 +1,9 @@
 dependencies:
   cache_directories:
-    -  "~/hoge"
+    - "~/hoge"
   pre:
-    -  "mkdir -p ~/hoge"
+    - "mkdir -p ~/hoge"
+    - "ls -la ~/hoge"
   override:
     - "# noop"
 

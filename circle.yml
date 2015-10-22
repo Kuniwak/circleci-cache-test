@@ -7,4 +7,5 @@ dependencies:
     - "#noop"
 
 test:
-  override: date >> ~/hoge/file
+  override:
+    -  date >> ~/hoge/file

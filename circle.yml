@@ -1,6 +1,11 @@
 dependencies:
-  cache_directories: ~/hoge/file
+  cache_directories:
+    -  ~/hoge/file
   pre: mkdir -p ~/hoge
+  override: "#noop"
+
+test:
+  override: "#noop"
 
 test:
   override: date >> ~/hoge/file

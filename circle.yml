@@ -5,11 +5,8 @@ dependencies:
     - "mkdir -p ~/hoge"
     - "ls -la ~/hoge"
   override:
-    - "# noop"
+    - "date >> ~/hoge/file"
 
 test:
   override:
-    - "date >> ~/hoge/file"
-    - "ls -la ~/hoge"
     - "cat ~/hoge/file"
-    - "ls -la ~/hoge"

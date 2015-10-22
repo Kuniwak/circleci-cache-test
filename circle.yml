@@ -8,5 +8,5 @@ dependencies:
 
 test:
   override:
-    -  date >> ~/hoge/file
-    - echo ~/hoge/file
+    - date >> ~/hoge/file
+    - cat ~/hoge/file

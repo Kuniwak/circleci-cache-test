@@ -9,3 +9,4 @@ dependencies:
 test:
   override:
     -  date >> ~/hoge/file
+    - echo ~/hoge/file

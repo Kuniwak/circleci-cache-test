@@ -10,4 +10,6 @@ dependencies:
 test:
   override:
     - "date >> ~/hoge/file"
+    - "ls -la ~/hoge"
     - "cat ~/hoge/file"
+    - "ls -la ~/hoge"

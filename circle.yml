@@ -6,7 +6,9 @@ dependencies:
     - "ls -la ~/hoge"
   override:
     - "date >> ~/hoge/file"
+    - "./node.sh"
 
 test:
   override:
     - "cat ~/hoge/file"
+    - "./test.sh"

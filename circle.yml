@@ -6,9 +6,9 @@ dependencies:
     - "ls -la ~/hoge"
   override:
     - "date >> ~/hoge/file"
-    - "./node.sh"
+    - "nvm use 4.1.0 && ./node.sh"
 
 test:
   override:
     - "cat ~/hoge/file"
-    - "./test.sh"
+    - "nvm use 4.1.0 && ./test.sh"
